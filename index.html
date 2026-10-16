@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Khánh Vy – Trưởng nhóm marketing · Đồi Mây</title>
+<meta name="description" content="Khánh Vy, trưởng nhóm marketing tại Đồi Mây, 5 năm kinh nghiệm. Thành tích, dự án tiêu biểu, cách làm việc, kỹ năng và thông tin liên hệ.">
+<style>
+:root{
+  --ink:#14110f;
+  --paper:#fffaf0;
+  --sun:#ffd23f;
+  --coral:#ff6f59;
+  --plum:#5a38e0;
+  --night:#1d1a5c;
+  --mint:#3de3b0;
+  --glow:#fff3b0;
+  --font:"Segoe UI","Helvetica Neue",Arial,system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:var(--font);font-size:1.0625rem;line-height:1.6;
+  color:var(--ink);background:var(--paper);
+  overflow-x:hidden;overflow-wrap:break-word;
+}
+a{color:inherit}
+:focus-visible{outline:4px solid var(--ink);outline-offset:3px}
+section{position:relative;overflow:hidden;padding:4rem 1.25rem}
+.wrap{max-width:70rem;margin:0 auto;position:relative;z-index:1}
+.label{
+  display:inline-block;font-weight:800;font-size:.9rem;letter-spacing:.14em;
+  text-transform:uppercase;border:3px solid currentColor;padding:.25rem .7rem;
+  transform:rotate(-2deg);margin-bottom:1.5rem;
+}
+h1,h2,h3,.big{font-weight:900;line-height:.95;letter-spacing:-.03em}
+.defs{position:absolute;width:0;height:0;overflow:hidden}
+
+/* TRANG TRI CHUNG: sao, may, den long */
+.sky::before,.sky::after{content:"";position:absolute;inset:0;pointer-events:none;background-repeat:repeat}
+.sky::before{
+  background-image:
+    radial-gradient(1.5px 1.5px at 20px 30px,#fff,transparent),
+    radial-gradient(1px 1px at 90px 80px,#fff,transparent),
+    radial-gradient(2px 2px at 150px 20px,#ffe9a6,transparent),
+    radial-gradient(1.5px 1.5px at 60px 130px,#fff,transparent);
+  background-size:180px 170px;
+}
+.sky::after{
+  background-image:
+    radial-gradient(2px 2px at 40px 60px,#fff,transparent),
+    radial-gradient(1.5px 1.5px at 130px 120px,#ffe9a6,transparent),
+    radial-gradient(1px 1px at 200px 40px,#fff,transparent),
+    radial-gradient(2px 2px at 100px 180px,#fff,transparent);
+  background-size:230px 210px;
+}
+.cloud{position:absolute;width:clamp(120px,34vw,280px);opacity:.55;pointer-events:none;z-index:0}
+.lantern{
+  position:absolute;width:clamp(44px,12vw,70px);height:auto;pointer-events:none;z-index:0;
+  transform-origin:50% 0;filter:drop-shadow(0 0 12px rgba(255,150,60,.85));
+}
+
+/* 1. HERO: dem trung thu */
+#dau{
+  background:linear-gradient(180deg,#6a45f0 0%,#7c48e0 55%,#ff7a6a 100%);
+  color:#fff;padding-top:4rem;padding-bottom:5.5rem;min-height:92vh;display:flex;align-items:center;
+}
+.hero-grid{display:grid;gap:1.5rem;justify-items:start;width:100%}
+.moon-wrap{position:relative;width:min(58vw,300px);justify-self:center;margin-top:1rem}
+.moon-wrap::before{
+  content:"";position:absolute;inset:-28%;border-radius:50%;
+  background:radial-gradient(circle,rgba(255,240,170,.55) 0%,rgba(255,214,90,.18) 45%,transparent 68%);
+  animation:pulse 4.5s ease-in-out infinite alternate;
+}
+.moon{
+  position:relative;display:block;width:100%;height:auto;
+  filter:drop-shadow(0 0 26px rgba(255,240,170,.9)) drop-shadow(0 0 60px rgba(255,214,90,.6));
+  animation:glow 4.5s ease-in-out infinite alternate;
+}
+#dau h1{font-size:clamp(4rem,23vw,9.5rem);text-transform:uppercase;margin-bottom:1.5rem}
+#dau h1 span{display:block}
+#dau h1 span+span{color:var(--sun);margin-left:8vw;text-shadow:0 0 28px rgba(255,210,63,.75)}
+.role{font-size:clamp(1.25rem,5vw,2rem);font-weight:800;max-width:20ch;margin-bottom:.5rem}
+.years{
+  display:inline-block;background:var(--ink);color:var(--sun);font-weight:800;
+  padding:.4rem 1rem;transform:rotate(-2deg);margin:.75rem 0 2rem;font-size:1.1rem;
+}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;min-height:56px;min-width:44px;
+  padding:.8rem 1.8rem;font-weight:900;font-size:1.15rem;text-decoration:none;
+  background:var(--sun);color:var(--ink);border:3px solid var(--ink);
+  box-shadow:6px 6px 0 var(--ink),0 0 26px rgba(255,210,63,.75);transition:transform .15s,box-shadow .15s;
+}
+.btn:hover{transform:translate(3px,3px);box-shadow:3px 3px 0 var(--ink),0 0 26px rgba(255,210,63,.75)}
+#dau .lantern.l1{left:4vw;top:0}
+#dau .lantern.l2{right:5vw;top:-22px;width:clamp(36px,10vw,58px)}
+#dau .lantern.l3{left:21vw;top:-46px;width:clamp(34px,9vw,52px)}
+#dau .cloud.c1{left:-6vw;bottom:2%}
+#dau .cloud.c2{right:-8vw;bottom:15%;width:clamp(90px,26vw,200px);opacity:.4}
+
+/* 2. THANH TICH */
+#thanh-tich{background:linear-gradient(180deg,#ffd23f 0%,#ffe27a 100%);color:var(--ink)}
+.stats{display:grid;gap:3.5rem;margin-top:1rem}
+.stat .big{font-size:clamp(3.6rem,19vw,10rem);display:block}
+.stat:nth-child(1) .big{color:var(--plum)}
+.stat:nth-child(2) .big{color:#d4351f}
+.stat:nth-child(3) .big{font-size:clamp(3rem,15vw,8rem)}
+.stat p{font-size:1.15rem;max-width:30ch;margin-top:.6rem;font-weight:700}
+.stat small{display:block;font-size:1rem;font-weight:500;margin-top:.2rem}
+.bars{display:grid;gap:.55rem;margin-top:1.1rem;max-width:30rem}
+.bar{display:grid;grid-template-columns:7.6rem 1fr;align-items:center;gap:.7rem;font-size:.95rem;font-weight:700}
+.bar .t{height:1.15rem;background:rgba(20,17,15,.14);border-radius:99px;overflow:hidden}
+.bar i{display:block;height:100%;width:var(--w);background:var(--plum);border-radius:99px;transform-origin:left}
+.bar.hi i{background:#d4351f}
+.cake-s{display:block;width:74px;height:74px;margin-top:1.1rem;animation:spin 40s linear infinite;filter:drop-shadow(0 4px 8px rgba(120,60,0,.35))}
+
+/* 3. DU AN */
+#du-an{background:radial-gradient(60% 45% at 92% 0%,#ffe9a6 0%,transparent 70%),var(--paper)}
+#du-an h3{font-size:clamp(2.6rem,12vw,6.5rem);margin-bottom:2rem}
+#du-an h3 em{font-style:normal;background:var(--sun);padding:0 .15em;box-shadow:0 0 28px rgba(255,210,63,.8)}
+#du-an .lantern{width:clamp(34px,9vw,48px)}
+#du-an .lantern.l1{right:5vw;top:-40px}
+#du-an .lantern.l2{right:20vw;top:-58px;width:clamp(28px,7vw,40px)}
+.card{position:relative;background:#fff;border:4px solid var(--ink);box-shadow:10px 10px 0 var(--coral);padding:1.5rem;transform:rotate(-1deg);max-width:44rem}
+.cake{position:absolute;right:-1.1rem;top:-2.4rem;width:82px;height:82px;animation:spin 40s linear infinite;filter:drop-shadow(0 4px 8px rgba(120,60,0,.4))}
+.card ul{list-style:none;display:grid;gap:.9rem}
+.card li{padding-left:1.6rem;position:relative}
+.card li::before{content:"";position:absolute;left:0;top:.6em;width:.8rem;height:.8rem;background:var(--coral);transform:rotate(45deg)}
+.card strong{font-weight:800}
+.nums{display:flex;flex-wrap:wrap;gap:1rem;margin-top:1.75rem}
+.nums div{background:var(--ink);color:var(--sun);padding:.8rem 1.1rem;font-weight:800;line-height:1.2;box-shadow:0 0 18px rgba(255,210,63,.55)}
+.nums b{display:block;font-size:2rem;font-weight:900}
+
+/* 4. CACH LAM: 3 pha mat trang */
+#cach-lam{background:var(--coral);color:var(--ink)}
+#cach-lam h3{font-size:clamp(2.6rem,12vw,6.5rem);margin-bottom:2rem}
+.steps{list-style:none;display:grid;gap:1rem;max-width:46rem}
+.steps li{background:var(--paper);border:4px solid var(--ink);padding:1.1rem 1.1rem 1.1rem 4.9rem;position:relative;font-weight:600}
+.steps li:nth-child(2){margin-left:1.2rem}
+.steps li:nth-child(3){margin-left:2.4rem}
+.ph{
+  position:absolute;left:1rem;top:50%;margin-top:-1.35rem;width:2.7rem;height:2.7rem;border-radius:50%;
+  background:var(--sun);overflow:hidden;box-shadow:0 0 16px rgba(255,190,40,.9),inset 0 0 0 2px rgba(20,17,15,.12);
+}
+.ph::after{content:"";position:absolute;inset:0;border-radius:50%;background:var(--paper);transform:translateX(var(--x))}
+
+/* 5. KY NANG: bau troi dem */
+#ky-nang{background:radial-gradient(90% 60% at 80% 0%,#3a2fa8 0%,var(--night) 70%);color:var(--paper)}
+#ky-nang .label{color:var(--mint)}
+.moon-s{
+  position:absolute;right:6vw;top:1.6rem;width:clamp(60px,16vw,110px);height:auto;pointer-events:none;
+  filter:drop-shadow(0 0 20px rgba(255,240,170,.9)) drop-shadow(0 0 44px rgba(255,214,90,.5));
+  animation:glow 4.5s ease-in-out infinite alternate;
+}
+.shoot{
+  position:absolute;top:14%;left:-30%;width:130px;height:2px;pointer-events:none;
+  background:linear-gradient(90deg,transparent,#fff);opacity:0;transform:rotate(25deg);
+  animation:shoot 8s linear infinite 1.5s;
+}
+.skills{list-style:none;display:grid;gap:.4rem}
+.skills li{font-size:clamp(2rem,10vw,5.5rem);font-weight:900;line-height:1.05;letter-spacing:-.03em;text-transform:uppercase}
+.skills li:nth-child(odd){color:var(--sun);text-shadow:0 0 22px rgba(255,210,63,.45)}
+.skills li:nth-child(even){color:var(--mint);padding-left:8vw;text-shadow:0 0 22px rgba(61,227,176,.4)}
+
+/* 6. LIEN HE */
+#lien-he{background:var(--mint);padding-bottom:6rem}
+#lien-he h3{font-size:clamp(2.6rem,12vw,6.5rem);margin-bottom:1.5rem}
+#lien-he .cloud{opacity:.7}
+#lien-he .cloud.c1{left:-8vw;bottom:-18px}
+#lien-he .cloud.c2{right:-6vw;bottom:34px;width:clamp(90px,24vw,200px);opacity:.5}
+.mail{
+  display:inline-block;min-height:56px;font-weight:900;font-size:clamp(1.15rem,5.2vw,2.2rem);
+  padding:.7rem 1rem;background:var(--ink);color:var(--sun);text-decoration:none;
+  border:3px solid var(--ink);box-shadow:6px 6px 0 var(--plum);overflow-wrap:anywhere;
+}
+.mail:hover{background:var(--plum);color:#fff}
+footer{background:var(--ink);color:var(--paper);padding:1.5rem 1.25rem;font-size:1rem}
+
+/* CHUYEN DONG */
+@keyframes glow{to{filter:drop-shadow(0 0 36px rgba(255,244,190,1)) drop-shadow(0 0 84px rgba(255,214,90,.8))}}
+@keyframes pulse{to{transform:scale(1.12);opacity:.8}}
+@keyframes sway{from{transform:rotate(-5deg)}to{transform:rotate(5deg)}}
+@keyframes drift{to{transform:translateX(14vw)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes twinkle{0%{opacity:.2}100%{opacity:1}}
+@keyframes shoot{
+  0%{transform:translate(0,0) rotate(25deg);opacity:0}
+  4%{opacity:1}
+  18%{transform:translate(150vw,70vw) rotate(25deg);opacity:0}
+  100%{transform:translate(150vw,70vw) rotate(25deg);opacity:0}
+}
+/* hieu ung chi bat khi JS chay va nguoi dung khong giam chuyen dong */
+.js-anim .rv{opacity:0;transform:translateY(40px) rotate(1.5deg);transition:opacity .7s ease,transform .7s ease}
+.js-anim .rv.in{opacity:1;transform:none}
+.js-anim .rv.card.in{transform:rotate(-1deg)}
+.js-anim .bar i{transform:scaleX(0);transition:transform 1.3s cubic-bezier(.2,.8,.2,1) .35s}
+.js-anim .rv.in .bar i{transform:scaleX(1)}
+.js-anim .lantern{animation:sway 4.6s ease-in-out infinite alternate}
+.js-anim .lantern.l2{animation-duration:5.4s;animation-delay:-1.8s}
+.js-anim .lantern.l3{animation-duration:6s;animation-delay:-3s}
+.js-anim .cloud{animation:drift 24s ease-in-out infinite alternate}
+.js-anim .cloud.c2{animation-duration:30s;animation-delay:-8s}
+.js-anim .sky::after{animation:twinkle 3.2s ease-in-out infinite alternate}
+.js-anim .moon-wrap{transform:translateY(calc(var(--py,0) * -1px))}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+}
+
+/* MAY TINH */
+@media (min-width:48rem){
+  section{padding:7rem 3rem}
+  #dau{padding-top:6rem}
+  .hero-grid{grid-template-columns:1.25fr .75fr;align-items:center;gap:3rem}
+  .moon-wrap{order:2;width:min(100%,380px);margin-top:0}
+  .stats{grid-template-columns:1.2fr 1fr;gap:4rem 3rem}
+  .stat:nth-child(1){grid-column:1}
+  .stat:nth-child(2){grid-column:2;margin-top:5rem}
+  .stat:nth-child(3){grid-column:1 / -1;margin-left:12%}
+  .card{padding:2.5rem;margin-left:8%}
+  .cake{width:104px;height:104px;right:-1.6rem;top:-3rem}
+  .steps li:nth-child(2){margin-left:4rem}
+  .steps li:nth-child(3){margin-left:8rem}
+  .skills li:nth-child(even){padding-left:12vw}
+  #lien-he .wrap{padding-left:10%}
+  #dau h1 span+span{margin-left:6vw}
+  #du-an .lantern.l1{right:8vw}
+  #du-an .lantern.l2{right:18vw}
+}
+</style>
+</head>
+<body>
+
+<!-- Hình dùng chung (trang trí): trăng, đèn lồng, bánh trung thu, mây -->
+<svg class="defs" aria-hidden="true" focusable="false">
+  <defs>
+    <radialGradient id="mg" cx="40%" cy="38%" r="70%">
+      <stop offset="0" stop-color="#fffbe0"/><stop offset=".6" stop-color="#ffec9a"/><stop offset="1" stop-color="#ffc94a"/>
+    </radialGradient>
+    <radialGradient id="lg" cx="50%" cy="45%" r="60%">
+      <stop offset="0" stop-color="#ff9a55"/><stop offset="1" stop-color="#e8312a"/>
+    </radialGradient>
+    <radialGradient id="cg" cx="45%" cy="40%" r="65%">
+      <stop offset="0" stop-color="#f6bd5a"/><stop offset="1" stop-color="#c46e1d"/>
+    </radialGradient>
+    <symbol id="moon" viewBox="0 0 200 200">
+      <circle cx="100" cy="100" r="96" fill="url(#mg)"/>
+      <g fill="#e9b94a" opacity=".5">
+        <circle cx="70" cy="70" r="14"/><circle cx="128" cy="96" r="20"/><circle cx="92" cy="140" r="11"/>
+        <circle cx="140" cy="146" r="8"/><circle cx="56" cy="112" r="7"/><circle cx="118" cy="52" r="6"/>
+      </g>
+    </symbol>
+    <symbol id="lantern" viewBox="0 0 60 150">
+      <line x1="30" y1="0" x2="30" y2="34" stroke="#b8860b" stroke-width="2"/>
+      <rect x="18" y="34" width="24" height="8" rx="3" fill="#f5b800"/>
+      <path d="M30 42 C58 46 58 98 30 104 C2 98 2 46 30 42Z" fill="url(#lg)"/>
+      <ellipse cx="30" cy="73" rx="12" ry="22" fill="#fff3b0" opacity=".38"/>
+      <path d="M30 42 C14 56 14 90 30 104 M30 42 C46 56 46 90 30 104 M30 42 V104" stroke="#ffd23f" stroke-opacity=".7" fill="none" stroke-width="1.5"/>
+      <rect x="18" y="103" width="24" height="7" rx="3" fill="#f5b800"/>
+      <line x1="30" y1="110" x2="30" y2="136" stroke="#ff4f3a" stroke-width="3"/>
+      <circle cx="30" cy="140" r="5" fill="#ff4f3a"/>
+    </symbol>
+    <symbol id="cake" viewBox="0 0 100 100">
+      <circle cx="50" cy="50" r="46" fill="url(#cg)"/>
+      <circle cx="50" cy="50" r="46" fill="none" stroke="#a85a14" stroke-width="5" stroke-dasharray="6 4"/>
+      <circle cx="50" cy="50" r="33" fill="none" stroke="#8a4a10" stroke-width="2" opacity=".7"/>
+      <g fill="#8a4a10" opacity=".7">
+        <ellipse cx="50" cy="33" rx="5" ry="11"/>
+        <ellipse cx="50" cy="33" rx="5" ry="11" transform="rotate(45 50 50)"/>
+        <ellipse cx="50" cy="33" rx="5" ry="11" transform="rotate(90 50 50)"/>
+        <ellipse cx="50" cy="33" rx="5" ry="11" transform="rotate(135 50 50)"/>
+        <ellipse cx="50" cy="33" rx="5" ry="11" transform="rotate(180 50 50)"/>
+        <ellipse cx="50" cy="33" rx="5" ry="11" transform="rotate(225 50 50)"/>
+        <ellipse cx="50" cy="33" rx="5" ry="11" transform="rotate(270 50 50)"/>
+        <ellipse cx="50" cy="33" rx="5" ry="11" transform="rotate(315 50 50)"/>
+        <circle cx="50" cy="50" r="7"/>
+      </g>
+    </symbol>
+    <symbol id="cloud" viewBox="0 0 200 80">
+      <path d="M40 72 a26 26 0 0 1 4-52 a34 34 0 0 1 64-6 a28 28 0 0 1 46 20 a22 22 0 0 1 6 38 Z" fill="#fff"/>
+    </symbol>
+  </defs>
+</svg>
+
+<header>
+<section id="dau" class="sky" aria-label="Giới thiệu">
+  <svg class="lantern l1" viewBox="0 0 60 150" aria-hidden="true"><use href="#lantern"/></svg>
+  <svg class="lantern l2" viewBox="0 0 60 150" aria-hidden="true"><use href="#lantern"/></svg>
+  <svg class="lantern l3" viewBox="0 0 60 150" aria-hidden="true"><use href="#lantern"/></svg>
+  <svg class="cloud c1" viewBox="0 0 200 80" aria-hidden="true"><use href="#cloud"/></svg>
+  <svg class="cloud c2" viewBox="0 0 200 80" aria-hidden="true"><use href="#cloud"/></svg>
+  <div class="wrap hero-grid">
+    <div class="moon-wrap" aria-hidden="true">
+      <svg class="moon" viewBox="0 0 200 200"><use href="#moon"/></svg>
+    </div>
+    <div class="hero-text">
+      <h1><span>Khánh</span><span>Vy</span></h1>
+      <p class="role">Trưởng nhóm marketing · Đồi Mây</p>
+      <p class="years">5 năm kinh nghiệm</p><br>
+      <a class="btn" href="mailto:khanhvy129@gmail.com">Gửi email</a>
+    </div>
+  </div>
+</section>
+</header>
+
+<main>
+<section id="thanh-tich" aria-labelledby="tt-t">
+  <div class="wrap">
+    <h2 class="label" id="tt-t">Thành tích</h2>
+    <div class="stats">
+      <div class="stat rv">
+        <span class="big"><span data-count="169">169</span> triệu</span>
+        <p>Doanh số hộp quà Trung Thu Trăng Vàng<small>Quý 3/2026</small></p>
+        <svg class="cake-s" viewBox="0 0 100 100" aria-hidden="true"><use href="#cake"/></svg>
+      </div>
+      <div class="stat rv">
+        <span class="big">+<span data-count="42">42</span>%</span>
+        <p>Doanh thu cả công ty Đồi Mây<small>Tháng 9 so với tháng 8 (2026)</small></p>
+        <div class="bars" role="img" aria-label="Doanh thu tháng 8 quy ước là 100, tháng 9 là 142">
+          <div class="bar"><span>Tháng 8 · 100</span><div class="t"><i style="--w:70.4%"></i></div></div>
+          <div class="bar hi"><span>Tháng 9 · 142</span><div class="t"><i style="--w:100%"></i></div></div>
+        </div>
+      </div>
+      <div class="stat rv">
+        <span class="big">3 giờ → 20 phút</span>
+        <p>Thời gian làm báo cáo bán hàng hàng tuần</p>
+        <div class="bars" role="img" aria-label="Thời gian làm báo cáo giảm từ 3 giờ xuống 20 phút">
+          <div class="bar"><span>Trước · 3 giờ</span><div class="t"><i style="--w:100%"></i></div></div>
+          <div class="bar hi"><span>Sau · 20 phút</span><div class="t"><i style="--w:11.1%"></i></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="du-an" aria-labelledby="da-t">
+  <svg class="lantern l1" viewBox="0 0 60 150" aria-hidden="true"><use href="#lantern"/></svg>
+  <svg class="lantern l2" viewBox="0 0 60 150" aria-hidden="true"><use href="#lantern"/></svg>
+  <div class="wrap">
+    <h2 class="label" id="da-t">Dự án tiêu biểu</h2>
+    <h3 class="big rv">Hộp quà Trung Thu <em>Trăng Vàng</em></h3>
+    <div class="card rv">
+      <svg class="cake" viewBox="0 0 100 100" aria-hidden="true"><use href="#cake"/></svg>
+      <ul>
+        <li><strong>Vai trò:</strong> trưởng nhóm marketing của dự án.</li>
+        <li><strong>Việc đã làm:</strong> làm video quảng bá sản phẩm, chủ yếu trên TikTok.</li>
+        <li><strong>Vì sao bán chạy:</strong> bán đúng mùa Trung Thu nên nhu cầu của người mua tăng cao.</li>
+      </ul>
+      <div class="nums">
+        <div><b>khoảng 2 triệu</b>view cho video lớn nhất</div>
+        <div><b>khoảng 400</b>đơn từ video đó</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="cach-lam" aria-labelledby="cl-t">
+  <div class="wrap">
+    <h2 class="label" id="cl-t">Cách làm việc</h2>
+    <h3 class="big rv">Báo cáo tuần</h3>
+    <ol class="steps">
+      <li class="rv"><span class="ph" style="--x:28%" aria-hidden="true"></span>Tóm tắt các báo cáo lẻ.</li>
+      <li class="rv"><span class="ph" style="--x:58%" aria-hidden="true"></span>Dùng Claude để phân tích.</li>
+      <li class="rv"><span class="ph" style="--x:100%" aria-hidden="true"></span>Gộp lại thành một bản duy nhất.</li>
+    </ol>
+  </div>
+</section>
+
+<section id="ky-nang" class="sky" aria-labelledby="kn-t">
+  <svg class="moon-s" viewBox="0 0 200 200" aria-hidden="true"><use href="#moon"/></svg>
+  <span class="shoot" aria-hidden="true"></span>
+  <div class="wrap">
+    <h2 class="label" id="kn-t">Kỹ năng</h2>
+    <ul class="skills">
+      <li class="rv">Làm video</li>
+      <li class="rv">Chạy quảng cáo</li>
+      <li class="rv">Quản lý nhóm và đội ngũ</li>
+      <li class="rv">Phân tích dữ liệu thị trường</li>
+    </ul>
+  </div>
+</section>
+
+<section id="lien-he" aria-labelledby="lh-t">
+  <svg class="cloud c1" viewBox="0 0 200 80" aria-hidden="true"><use href="#cloud"/></svg>
+  <svg class="cloud c2" viewBox="0 0 200 80" aria-hidden="true"><use href="#cloud"/></svg>
+  <div class="wrap">
+    <h2 class="label" id="lh-t">Liên hệ</h2>
+    <h3 class="big rv">Hãy gửi email cho Vy.</h3>
+    <a class="mail" href="mailto:khanhvy129@gmail.com">khanhvy129@gmail.com</a>
+  </div>
+</section>
+</main>
+
+<footer>© 2026 Khánh Vy</footer>
+
+<script>
+(function(){
+  var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reduce || !('IntersectionObserver' in window)) return;
+  document.documentElement.classList.add('js-anim');
+  var io = new IntersectionObserver(function(es){
+    es.forEach(function(e){
+      if(!e.isIntersecting) return;
+      e.target.classList.add('in');
+      e.target.querySelectorAll('[data-count]').forEach(count);
+      io.unobserve(e.target);
+    });
+  },{threshold:.15});
+  document.querySelectorAll('.rv').forEach(function(el){ io.observe(el); });
+  function count(el){
+    var to = +el.getAttribute('data-count'), t0 = null, d = 1400;
+    function step(t){
+      if(t0===null) t0 = t;
+      var p = Math.min((t-t0)/d,1), v = Math.round(to*(1-Math.pow(1-p,3)));
+      el.textContent = v;
+      if(p<1) requestAnimationFrame(step); else el.textContent = to;
+    }
+    el.textContent = 0;
+    requestAnimationFrame(step);
+  }
+  // trang o dau trang troi len cham khi cuon
+  var moon = document.querySelector('.moon-wrap'), ticking = false;
+  if (moon) addEventListener('scroll', function(){
+    if (ticking) return;
+    ticking = true;
+    requestAnimationFrame(function(){
+      moon.style.setProperty('--py', Math.min(scrollY * .18, 120));
+      ticking = false;
+    });
+  }, {passive:true});
+})();
+</script>
+</body>
+</html>
